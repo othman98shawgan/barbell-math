@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_plates">
+
+    <fragment
+        android:id="@+id/nav_max"
+        android:name="com.app.barbellmath.ui.MaxFragment"
+        android:label="1 Rep Max"
+        tools:layout="@layout/fragment_max" />
+
+    <fragment
+        android:id="@+id/nav_wendler"
+        android:name="com.app.barbellmath.ui.calcWendlerFragment"
+        android:label="5/3/1 Wendler Percentages"
+        tools:layout="@layout/fragment_calc_wendler" />
+
+    <fragment
+        android:id="@+id/nav_perc"
+        android:name="com.app.barbellmath.ui.percentageFragment"
+        android:label="Calculate Percentage"
+        tools:layout="@layout/fragment_percentage" />
+
+    <fragment
+        android:id="@+id/nav_plates"
+        android:name="com.app.barbellmath.ui.platesFragment"
+        android:label="Calculate Plates"
+        tools:layout="@layout/fragment_plates" />
+
+    <fragment
+        android:id="@+id/nav_rev_plates"
+        android:name="com.app.barbellmath.ui.revPlatesFragment"
+        android:label="Calculate Barbell Weight"
+        tools:layout="@layout/fragment_rev_plates" />
+
+    <fragment
+        android:id="@+id/nav_timer"
+        android:name="com.app.barbellmath.ui.timerFragment"
+        android:label="Timer"
+        tools:layout="@layout/fragment_timer" />
+
+    <fragment
+        android:id="@+id/nav_convert"
+        android:name="com.app.barbellmath.ui.convertFragment"
+        android:label="Convert"
+        tools:layout="@layout/fragment_convert" />
+
+    <fragment
+        android:id="@+id/nav_timer2"
+        android:name="com.app.barbellmath.ui.timerFragment2"
+        android:label="Timer"
+        tools:layout="@layout/fragment_timer2" />
+
+</navigation>

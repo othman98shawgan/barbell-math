@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context=".ui.revPlatesFragment">
+
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color2"
+        android:text="@string/calculate"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="164dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:gravity="center"
+        android:hint="@string/weight"
+        android:inputType="phone"
+        android:digits="1234567890."
+        android:textColor="@color/color3"
+        android:textColorHighlight="@color/color3"
+        android:textColorLink="@color/color3"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/enter_plates_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Available Plates:"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintWidth_percent="0.3"
+        tools:visibility="visible"/>
+
+
+
+    <ImageButton
+        android:id="@+id/button_done"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/done_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/button_edit"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/settigns_icon"
+        tools:visibility="visible" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_50h"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_25h"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_40h"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_55h"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_70h"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_85h"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_50v"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_25v"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_75v"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView_25kg"
+        android:padding="2dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_25h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_40h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_25v"
+        app:srcCompat="@drawable/plate_25kg" />
+
+
+    <TextView
+        android:id="@+id/res25kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_40h"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v"
+        app:layout_constraintTop_toTopOf="@id/guideline_25h" />
+
+    <EditText
+        android:id="@+id/edit25kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="phone"
+        android:digits="1234567890"        android:textColor="#000000"
+        android:textSize="46sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_40h"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v"
+        app:layout_constraintTop_toTopOf="@id/guideline_25h"/>
+
+
+    <ImageView
+        android:id="@+id/imageView_20kg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="2dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_40h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_55h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_25v"
+        app:srcCompat="@drawable/plate_20kg" />
+
+    <TextView
+        android:id="@+id/res20kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        app:layout_constraintTop_toTopOf="@id/guideline_40h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_55h"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v" />
+
+    <EditText
+        android:id="@+id/edit20kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/guideline_40h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_55h"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v" />
+
+    <ImageView
+        android:id="@+id/imageView_15kg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="2dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_55h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_25v"
+        app:srcCompat="@drawable/plate_15kg" />
+
+    <TextView
+        android:id="@+id/res15kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        app:layout_constraintTop_toTopOf="@id/guideline_55h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70h"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v" />
+
+    <EditText
+        android:id="@+id/edit15kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/guideline_55h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70h"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v"/>
+
+    <ImageView
+        android:id="@+id/imageView_10kg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="2dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_70h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_85h"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_25v"
+        app:srcCompat="@drawable/plate_10kg" />
+
+    <TextView
+        android:id="@+id/res10kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        app:layout_constraintTop_toTopOf="@id/guideline_70h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_85h"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"/>
+
+    <EditText
+        android:id="@+id/edit10kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/guideline_70h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_85h"
+        app:layout_constraintStart_toStartOf="@id/guideline_25v"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50v"/>
+
+    <ImageView
+        android:id="@+id/imageView_5kg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="2dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_25h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_40h"
+        app:layout_constraintStart_toStartOf="@id/guideline_50v"
+        app:layout_constraintEnd_toEndOf="@id/guideline_75v"
+        app:srcCompat="@drawable/plate_5kg" />
+
+    <TextView
+        android:id="@+id/res5kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        app:layout_constraintTop_toTopOf="@id/guideline_25h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_40h"
+        app:layout_constraintStart_toStartOf="@id/guideline_75v"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit5kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/guideline_25h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_40h"
+        app:layout_constraintStart_toStartOf="@id/guideline_75v"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView_2.5kg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="2dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_40h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_55h"
+        app:layout_constraintStart_toStartOf="@id/guideline_50v"
+        app:layout_constraintEnd_toEndOf="@id/guideline_75v"
+        app:srcCompat="@drawable/plate_2_50kg" />
+
+    <TextView
+        android:id="@+id/res2_5kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        app:layout_constraintTop_toTopOf="@id/guideline_40h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_55h"
+        app:layout_constraintStart_toStartOf="@id/guideline_75v"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit2_5kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/guideline_40h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_55h"
+        app:layout_constraintStart_toStartOf="@id/guideline_75v"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_1.25kg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="2dp"
+        app:layout_constraintTop_toTopOf="@id/guideline_55h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70h"
+        app:layout_constraintStart_toStartOf="@id/guideline_50v"
+        app:layout_constraintEnd_toEndOf="@id/guideline_75v"
+        app:srcCompat="@drawable/plate_1_25kg" />
+
+    <TextView
+        android:id="@+id/res1_25kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        app:layout_constraintTop_toTopOf="@id/guideline_55h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70h"
+        app:layout_constraintStart_toStartOf="@id/guideline_75v"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit1_25kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textColor="#000000"
+        android:textSize="46sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/guideline_55h"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70h"
+        app:layout_constraintStart_toStartOf="@id/guideline_75v"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

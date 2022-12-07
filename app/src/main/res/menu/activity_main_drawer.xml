@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_plates"
+            android:icon="@drawable/plates"
+            android:title="Plates Calculater" />
+        <item
+            android:id="@+id/nav_rev_plates"
+            android:icon="@drawable/barbell"
+            android:title="Reverse Plates Calculater" />
+        <item
+            android:id="@+id/nav_max"
+            android:icon="@drawable/weightlifting_icon"
+            android:title="1RM" />
+        <item
+            android:id="@+id/nav_perc"
+            android:icon="@drawable/percentage_icon"
+            android:title="Calculate Percentage" />
+
+        <item
+            android:id="@+id/nav_wendler"
+            android:icon="@drawable/wendler"
+            android:title="Wendler Percentages" />
+
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@drawable/timer_icon"
+            android:title="Timer" />
+
+        <item
+            android:id="@+id/nav_convert"
+            android:icon="@drawable/convert_ic"
+            android:title="Weight Converter" />
+
+        <item
+            android:id="@+id/nav_timer2"
+            android:icon="@drawable/timer_icon"
+            android:title="Timer" />
+
+    </group>
+
+</menu>
